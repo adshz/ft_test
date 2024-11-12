@@ -37,7 +37,7 @@ void	test_add(t_test_case **suite, t_test_case *test)
 	}
 	current = *suite;
 	while (current->next)
-		current->next = test;
+		current = current->next;
 	current->next = test;
 }
 
