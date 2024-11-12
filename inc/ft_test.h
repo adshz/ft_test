@@ -47,7 +47,7 @@ typedef struct s_test_case
 }	t_test_case;
 
 /* Core Functionalities */
-t_test_case	*test_case(char *name, t_test_func func);
+t_test_case	*test_create(char *name, t_test_func func);
 void		test_add(t_test_case **suite, t_test_case *test);
 void		test_run_suite(t_test_case *suite);
 void		test_cleanup(t_test_case *suite);
